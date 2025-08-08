@@ -1,0 +1,20 @@
+/* Importação das Fontes do Google Fonts */
+/* Asap: para títulos */
+/* Inconsolata: para subtítulos */
+/* Maven Pro: para textos */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Inconsolata:wght@400&family=Maven+Pro:wght@400;500&display=swap');
+
+
+/*Reset CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variáveis CSS para as Cores e Fontes */
+
+:root {
+  
+}
