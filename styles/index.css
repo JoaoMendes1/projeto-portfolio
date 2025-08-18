@@ -1,20 +1,118 @@
-/* Importação das Fontes do Google Fonts */
-/* Asap: para títulos */
-/* Inconsolata: para subtítulos */
-/* Maven Pro: para textos */
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&family=Inconsolata:wght@400&family=Maven+Pro:wght@400;500&display=swap');
+/* Importação das fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap');
 
-
-/*Reset CSS*/
-
+/* Reset básico para remover margens e paddings padrão do navegador */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*Variáveis CSS para as Cores e Fontes */
-
 :root {
-  
+  /* Variáveis para as fontes */
+  --font-title-lg: 'Asap', sans-serif;
+  --font-title-sm: 'Inconsolata', monospace;
+  --font-body: 'Maven Pro', sans-serif;
+
+  /* Variáveis para os tamanhos das fontes */
+  --size-title-lg: 56px;
+  --size-title-md: 24px;
+  --size-title-sm: 16px;
+  --size-subtitle: 20px;
+  --size-text-md: 16px;
+  --size-text-sm: 14px;
+}
+
+body {
+  background-color: #16181D; /*Cor de fundo escura*/
+  color: #E1E1E6; /*Cor de texto principal*/
+  font-family: 'Maven Pro', sans-serif; /*Fonte Poppins*/
+  line-height: 1.6;
+}
+
+/* Estilos de fonte específicos para os títulos, seguindo a imagem */
+h1, h2, h3 {
+  font-family: 'Inconsolata', monospace;
+}
+
+/* A fonte Inconsolata é para os subtítulos do tipo "title sm" */
+p, h4 {
+    font-family: 'Inconsolata', monospace;
+}
+
+/*Estilo para links para remover sublinhado e manter a cor padrão*/
+a{
+  text-decoration: none;
+  color: inherit
+}
+
+/*===================================================================================*/
+
+.container {
+  width: 90%;
+  max-width: 1120px; /*Largura máxima para centralizar o conteúdo*/
+  margin: 0 auto; /*Centraliza o container*/
+}
+
+.skills { 
+  display: flex; /* Alinha os itens lado a lado */
+  justify-content: center; /* Centraliza todos os itens na linha */
+  align-items: center;
+  flex-wrap: wrap; /*Permite que os itens quebrem a linha em telas menores*/
+  gap: 1rem; /*Espaçamento entre os itens*/
+  margin-top: 2rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5;
+  background-color: #292C34;
+  border: 1px solid #292c34;
+  border-radius: 9999px;
+  padding: 0.3rem 1.1rem;
+  font-weight: 500;
+  transition: transform 0.3s ease;;
+}
+
+.skill-item img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 0rem;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px); /*Efeito de elevação ao passar o mouse*/
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(/assets/Background_Intro.png);
+  background-position: center; /*Centraliza a imagem*/
+  background-repeat: no-repeat; /*Não repete a imagem*/
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#span-name {
+  color: #E3646E;
+}
+
+.hero-section h2 {
+  font-size: var(--size-title-lg);
+  font-weight: 700;
+}
+
+.hero-section h1 {
+  font-size: var(--size-title-md);
+}
+
+.hero-section p {
+  font-size: var(--size-text-sm);
 }
