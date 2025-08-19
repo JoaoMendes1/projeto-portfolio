@@ -48,7 +48,7 @@ a{
   color: inherit
 }
 
-/*===================================================================================*/
+/*=====================================Header Section==============================================*/
 
 .container {
   width: 90%;
@@ -100,7 +100,8 @@ a{
   padding-bottom: 50px;
 }
 
-#span-name {
+.span-name {
+  font-size: var(--size-title-sm);
   color: #E3646E;
 }
 
@@ -116,3 +117,62 @@ a{
 .hero-section p {
   font-size: var(--size-text-sm);
 }
+
+/*======================= Projeect Section ========================*/
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; /* Esta linha adiciona o espaçamento entre os cards */
+    margin-top: 2rem;
+}
+
+.project-card {
+  background-color: #202024;
+  border-radius: 8px;
+  overflow: hidden; /*Garante que a imagem com bordas retas não "vaze" do card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Sombra*/
+  transition: transform 0.3s ease;
+
+}
+
+/* Efeito ao passar o mouse sobre o card */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+}
+
+/*Estilo para a imagem dentro do card*/
+
+.project-card img {
+  width: 100%; /*A imagem cupa 100% da largura do card*/
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card .project-content {
+    padding: 1.5rem; /* Adiciona um bom espaçamento interno ao redor do texto */
+}
+
+.project-card h4 {
+    font-size: var(--size-subtitle); /* Use a variável de tamanho para o título */
+    color: #E1E1E6; /* Cor do texto principal */
+    margin-bottom: 0.5rem; /* Espaço abaixo do título */
+}
+
+.project-card p {
+    font-size: var(--size-text-sm); /* Use a variável de tamanho para o parágrafo */
+    color: #C0C4CE; /* Uma cor de cinza mais claro para a descrição */
+}
+
+.project-card {
+  padding: 1rem;
+}
+
