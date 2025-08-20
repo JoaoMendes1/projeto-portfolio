@@ -48,7 +48,7 @@ a{
   color: inherit
 }
 
-/*=====================================Header Section==============================================*/
+/*===================================== Header Section==============================================*/
 
 .container {
   width: 90%;
@@ -125,6 +125,7 @@ a{
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 50px;
 }
 
 .projects-grid {
@@ -178,46 +179,60 @@ a{
 
 /*======================= Meus Serviços ========================*/
 
+.services-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #0D0E11;
+  padding: 4rem 0;
+}
+
 /* Estilizando o container do grid de serviços */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 /* Estilizando cada card de serviço */
-.service-card {
-    background-color: #202024;
-    border-radius: 8px;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease;
+.services-card {
+  background-color: #202023;
+  border: 1px solid #C0C4CE;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+
 }
 
 /* Efeito ao passar o mouse */
 .service-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /* Estilo para a imagem/ícone dentro do card */
 .service-card img {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 1rem;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
 }
 
 /* Estilo para o título e o parágrafo dentro do card */
 .service-card h4 {
-    font-size: var(--size-subtitle);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+  font-size: var(--size-subtitle);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .service-card p {
-    font-size: var(--size-text-sm);
-    color: #C0C4CE;
+  font-size: var(--size-text-sm);
+  color: #C0C4CE;
 }
+
+/*======================= Footer ========================*/
+
