@@ -236,3 +236,60 @@ a{
 
 /*======================= Footer ========================*/
 
+/* Estilo geral para a seção de contato */
+.contact-section {
+  background-image: url(/assets/Background_Intro.png);
+  background-position: center; /*Centraliza a imagem*/
+  background-repeat: no-repeat; /*Não repete a imagem*/
+  background-size: cover;
+  color: #E1E1E6; /* Cor de texto principal */
+  text-align: center; /*Centraliza todo o conteúdo (títulos, parágrafos e ícones)*/
+  padding: 4rem 0; /*Espaçamento vertical interno*/
+
+}
+
+/* Estilo para os cards de ícones de redes sociais  */
+.social-links {
+  display: flex; /* Alinha os links lado a lado */
+  flex-direction: column;
+  gap: 0.75rem; /*Espaçamento entre os itens*/
+  margin-top: 2rem; /*espaçamento entre o texto e os ícones*/
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.social-item {
+  display: flex; /* Alinha o ícone e o texto lado a lado */
+  align-items: center; /*Centraliza o ícone e o texto*/
+  justify-content: space-between;
+  background-color: #292c34;
+  border: 1px solid #484c56;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: var(--size-text-sm);
+  color: #E1E1E6;
+  transition: background-color 0.3s ease;
+}
+
+.social-item:hover {
+    background-color: #484c56;
+}
+
+.social-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-item span {
+    margin-left: 0.4rem;
+    flex-grow: 1; /* Faz o span ocupar o espaço restante */
+    text-align: left;
+}
+
+.social-item .arrow-icon {
+    width: 20px;
+    height: 20px;
+}
+
